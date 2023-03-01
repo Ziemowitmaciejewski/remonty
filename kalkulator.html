@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wyremontuj mieszkanie</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="remont.css" />
+
+<script>
+function oblicze() {
+var wymiarx = wymiar1.value;
+var wymiary = wymiar2.value;
+
+var powierzchnia = Math.round(10*(wymiarx*2+wymiary*2)*2.7)/10;
+var koszt = 8*powierzchnia;
+
+document.getElementById("ak2").innerHTML = "Powierzchnai całkowita ścian:" +powierzchnia + "m2";
+document.getElementById("ak3").innerHTML = "Koszt" +koszt + " zł";
+}
+</script>
+
+</head>
+
+<body>
+
+<section id="baner">
+<img src="logo.png" alt="logo">
+</section>
+
+<section id="menu">
+<div><a href="index.html">O NAS</a></div>
+<div><a href="kontakt.html">KONTAKT</div>
+<div><a href="kalkulator.html">KALKULATOR</div>
+<div><a href="http://jakremontowac.pl">POLECANE STRONY</a></div>
+</section>
+
+<section id="glowny">
+
+<h1>Malowanie pokoju 8zł za m2</h1>
+<p>Wymiary pokoju w metrach <input type="number" id="wymiar1" name="wymiar1"> <input id="wymiar2" name="wymiar2" type="number"></p>
+<input id="input" type="button" onclick="oblicze()" value="OBLICZ KOSZT">
+
+<p id="ak2">Powierzchnia całkowita ścian: </p>
+<p id="ak3">Koszt malownia: </p>
+
+</section>
+
+
+<section id="stopka">
+<p>Autor strony: 00000000000</p>
+</section>

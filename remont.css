@@ -1,0 +1,27 @@
+body, html{height:100%;}
+
+#baner{background:rgb(255,213,162); text-align:center; padding:20px;}
+#menu > div {float:left; background:rgb(191,112,17); color:white; text-align:center; font-size:150%; width:25%;}
+
+#glowny{
+	height:400px; 
+}
+#stopka{
+	background:rgb(191,112,17); 
+	color:white; 
+	text-align:right; 
+	font-size:150%;
+}
+a{
+	color:white;
+}
+
+#input{
+	background-color: brown;
+	border-color: brown;
+	border-style: solid;
+	border-width: 2px;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+}
